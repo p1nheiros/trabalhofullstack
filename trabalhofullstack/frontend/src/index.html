@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./css/output.css" rel="stylesheet">
+  <script src="./js/main.js" defer></script>
+</head>
+<body>
+ <div class="container mx-auto mt-8">
+  <h1 class="text-3xl font-bold mb-4">Cadastro de Pessoa</h1>
+  <form id="cadastroForm" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+    <div class="mb-4">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="nome">Nome</label>
+      <input id="nome" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700" type="text" placeholder="Digite o nome">
+    </div>
+    <div class="mb-4">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="cpf">CPF</label>
+      <input id="cpf" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700" type="text" placeholder="Digite o CPF">
+    </div>
+    <div class="mb-4">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="telefone">Telefone</label>
+      <input id="telefone" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700" type="text" placeholder="Digite o telefone">
+    </div>
+    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" type="submit">Cadastrar</button>
+  </form>
+
+  <!-- Tabela para listar as pessoas cadastradas -->
+  <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+    <h2 class="text-2xl font-bold mb-4">Pessoas Cadastradas</h2>
+    <table id="tabelaPessoas" class="min-w-full bg-white border border-gray-200">
+      <thead>
+        <tr>
+          <th class="py-2 px-4 border-b">Nome</th>
+          <th class="py-2 px-4 border-b">CPF</th>
+          <th class="py-2 px-4 border-b">Telefone</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- As linhas da tabela serão inseridas aqui pelo JavaScript -->
+      </tbody>
+    </table>
+  </div>
+</div>
+</body>
+</html>
